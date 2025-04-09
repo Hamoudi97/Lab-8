@@ -54,3 +54,12 @@ console.log(first, second);
 let clonedStudent = { ...student, weaponProficiency: "Master" };
 
 console.log(clonedStudent);
+
+let combinedCourses = [
+  ...student.courses,
+  "Relationship Building",
+  "Exploration",
+  "Trade Skills",
+];
+
+console.log(combinedCourses);
