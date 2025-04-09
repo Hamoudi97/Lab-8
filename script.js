@@ -73,3 +73,9 @@ student.addCourse = function addCourse(newCourse) {
 student.addCourse("Stealing");
 
 console.log(student);
+
+student.totalCourses = function totalCourses() {
+  return this.courses.length;
+};
+
+console.log(student.totalCourses());
