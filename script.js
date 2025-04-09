@@ -63,3 +63,13 @@ let combinedCourses = [
 ];
 
 console.log(combinedCourses);
+
+// Part 5: Object Methods
+
+student.addCourse = function addCourse(newCourse) {
+  this.courses.push(newCourse);
+};
+
+student.addCourse("Stealing");
+
+console.log(student);
