@@ -23,3 +23,16 @@ let student = {
 console.log(student.name);
 console.log(student.age);
 student.greet();
+
+// Part 2: Working with JSON
+let jsonStudent = JSON.stringify(student);
+
+console.log(jsonStudent);
+
+let jsStudent = JSON.parse(jsonStudent);
+
+console.log("Original student object:");
+console.log(student);
+
+console.log("Parsed student object:");
+console.log(jsStudent);
