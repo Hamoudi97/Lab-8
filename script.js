@@ -25,11 +25,11 @@ console.log(student.age);
 student.greet();
 
 // Part 2: Working with JSON
-let jsonStudent = JSON.stringify(student);
+let jsonStudent = JSON.stringify(student); // JSON object of student
 
 console.log(jsonStudent);
 
-let jsStudent = JSON.parse(jsonStudent);
+let jsStudent = JSON.parse(jsonStudent); // Convert JSON student object back to JS student object
 
 console.log("Original student object:");
 console.log(student);
@@ -44,7 +44,7 @@ let { name: studentName, courses: studentCourses } = student;
 console.log(studentName);
 console.log(studentCourses);
 
-let scores = [100, 90, 80, 70, 60]; // Used in bonus task later on
+let scores = [100, 90, 80, 70, 60]; // Used in bonus task later on as well
 
 let [first, second] = scores;
 console.log(first, second);
