@@ -36,3 +36,15 @@ console.log(student);
 
 console.log("Parsed student object:");
 console.log(jsStudent);
+
+// Part 3: Using Destructuring Assignment
+
+let { name: studentName, courses: studentCourses } = student;
+
+console.log(studentName);
+console.log(studentCourses);
+
+let scores = [100, 90, 80, 70, 60];
+
+let [first, second] = scores;
+console.log(first, second);
