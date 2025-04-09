@@ -1,4 +1,4 @@
-//Part 1: Understanding and Creating Objects
+// Part 1: Understanding and Creating Objects
 
 let student = {
   name: "Arthur Morgan",
@@ -12,12 +12,11 @@ let student = {
     "Hand-to-Hand Combat",
   ],
   greet: function () {
-    console.log(`Hello! 
-        My name is ${this.name} and I am ${this.age} years old. 
-        My enrollment status is ${
-          this.enrolled ? "Enrolled" : "Not enrolled"
-        } and I am enrolled in the following courses: 
-        ${this.courses.join(", ")}.`);
+    console.log(
+      `Hello! My name is ${this.name} and I am ${this.age} years old.\nI am ${
+        this.enrolled ? "enrolled" : "Not enrolled"
+      } in the following courses:\n${this.courses.join(", ")}.`
+    );
   },
 };
 
