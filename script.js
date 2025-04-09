@@ -44,7 +44,7 @@ let { name: studentName, courses: studentCourses } = student;
 console.log(studentName);
 console.log(studentCourses);
 
-let scores = [100, 90, 80, 70, 60];
+let scores = [100, 90, 80, 70, 60]; // Used in bonus task later on
 
 let [first, second] = scores;
 console.log(first, second);
@@ -79,3 +79,15 @@ student.totalCourses = function totalCourses() {
 };
 
 console.log(student.totalCourses());
+
+// Bonus Task
+
+let averageScore = scores.reduce((accumulator, score, index, array) => {
+  accumulator += score;
+  if (index === array.length - 1) {
+    return accumulator / array.length;
+  }
+  return accumulator;
+}, 0);
+
+console.log(averageScore);
