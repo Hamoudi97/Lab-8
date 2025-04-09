@@ -48,3 +48,9 @@ let scores = [100, 90, 80, 70, 60];
 
 let [first, second] = scores;
 console.log(first, second);
+
+// Part 4: The Spread Operator
+
+let clonedStudent = { ...student, weaponProficiency: "Master" };
+
+console.log(clonedStudent);
